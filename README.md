@@ -19,7 +19,19 @@ e.g. `/about/28 unique views/index 5 unique views etc...`
 ## How to test this program
 
 ## User Stories
+```
+As a developer  
+So that I can find out information about a specific log file
+I would like to use an existing log file in my program.
 
+As a developer
+So that I can check out the popularity of our web pages
+I would like to see a list of web page views ordered from highest to lowest page views.
+
+As a developer
+So that I can see how many different people are viewing our web pages
+I would like to see a list of web pages with the most unique page views also ordered.
+```
 
 ## Author
 Jordan Roberts
