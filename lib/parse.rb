@@ -27,7 +27,7 @@ class Parse
     unique_views = Hash.new(0)
     removed_duplicates = @log.uniq.map { |item| item[0] }
     removed_duplicates.each { |url| unique_views[url] += 1 }
-    @ip_address = unique_views.sort_by { |_page, views| views }.reverse
+    @ip_address = unique_views.sort_by { |page, views| views }.reverse
     @ip_address
   end
 

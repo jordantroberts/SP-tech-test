@@ -22,14 +22,26 @@ e.g. `/about/28 unique views/index 5 unique views etc...`
 
 ```
 irb
-> require './lib/parse'
-> file = Parse.new
-> file.parser(insert file path in quotation marks here)
-> file.sort_by_page_view
-> file.see_views
-> file.sort_by_unique_view
-> file.see_unique_views
 ```
+Load the file:
+`> require './lib/parse'`
+
+Create a new instance of the Parse class:
+`> file = Parse.new`
+
+Pass the log file as an argument to the 'parser' method, which will read the file and return an array of each URL and IP address:
+`> file.parser(insert file path in quotation marks here)`
+
+Count how many times the page has been visited:
+`> file.sort_by_page_view`
+
+View this data as a list:  
+`file.see_views`
+
+Do the same for how many times a page has been visited by a unique IP address:
+`> file.sort_by_unique_view
+> file.see_unique_views`
+
 
 ## How to test this program
 
