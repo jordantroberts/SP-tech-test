@@ -11,13 +11,9 @@ class Parse
   end
 
   def parser(file)
-    file_contents = ""
-    File.foreach(file) do |line|
-      @log << line
-      file_contents += line
-    end
+    File.foreach(file) { |line| @log << line }
     @log = @log.map { |i| i.split(' ') }
-    return file_contents
+    return @log
   end
 
   def sort_by_page_view

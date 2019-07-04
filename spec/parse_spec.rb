@@ -4,7 +4,7 @@ describe Parse do
 
   describe '#parser' do
     it 'parses contents of log file' do
-      expect(subject.parser('./testserver.log')).to eq File.read('./testserver.log')
+      expect(subject.parser('./testserver.log')).to include(["/contact", "000.000.000"])
     end
   end
 
