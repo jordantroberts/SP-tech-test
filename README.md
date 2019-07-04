@@ -16,7 +16,26 @@ e.g. `/about/28 unique views/index 5 unique views etc...`
 
 ## How to run this program
 
+1. Clone this repo
+2. Run `bundle install` from the command line
+3. Use this program as follows from your terminal:
+
+```
+irb
+> require './lib/parse'
+> file = Parse.new
+> file.parser(insert file path in quotation marks here)
+> file.sort_by_page_view
+> file.see_views
+> file.sort_by_unique_view
+> file.see_unique_views
+```
+
 ## How to test this program
+
+1. Clone this repo
+2. Run `bundle install` from the command line
+3. From the command line, run `rspec`
 
 ## User Stories
 ```
