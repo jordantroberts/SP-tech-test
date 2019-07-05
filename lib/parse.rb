@@ -1,7 +1,7 @@
 require_relative 'list'
 
 class Parse
-  attr_reader :log, :views, :IP_address
+  attr_reader :log, :views, :ip_address
 
   def initialize
     @log = []
@@ -19,7 +19,7 @@ class Parse
     page_views = Hash.new(0)
     url_array = @log.map { |item| item[0] }
     url_array.each { |url| page_views[url] += 1 }
-    @views = page_views.sort_by { |_page, views| views }.reverse
+    @views = page_views.sort_by { |page, views| views }.reverse
     @views
   end
 
