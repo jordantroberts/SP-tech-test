@@ -39,9 +39,10 @@ View this data as a list:
 `file.see_views`
 
 Do the same for how many times a page has been visited by a unique IP address:
-`> file.sort_by_unique_view`
-`> file.see_unique_views`
-
+```
+> file.sort_by_unique_view
+> file.see_unique_views
+```
 
 ## How to test this program
 
